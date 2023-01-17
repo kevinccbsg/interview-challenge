@@ -1,5 +1,5 @@
 const validate = require('./schema/validate');
-const { removeIDs, removeJSONDuplicates } = require('./utils');
+const { filterObjects, filterScenes } = require('./src');
 
 const cleanApp = (appObject) => {
   if (!appObject) {
@@ -7,11 +7,8 @@ const cleanApp = (appObject) => {
   }
   validate(appObject);
   const versions = appObject.versions.map(version => {
-    const filteredObjects = removeJSONDuplicates(version.objects);
-    const scenes = version.scenes.map(scene => {
-      const filteredViews = removeJSONDuplicates(scene.views);
-      return { ...scene, views: filteredViews };
-    });
+    const filteredObjects = filterObjects(version.objects);
+    const scenes = filterScenes(version.scenes);
     return {
       ...version,
       objects: filteredObjects,
