@@ -1,0 +1,16 @@
+{
+  "name": "coding-exercise",
+  "version": "1.0.0",
+  "description": "find duplicates in a mock example",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "duplicates",
+    "nodejs",
+    "test"
+  ],
+  "author": "kevin martinez",
+  "license": "ISC"
+}
