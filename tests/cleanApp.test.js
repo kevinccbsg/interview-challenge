@@ -1,4 +1,4 @@
-const cleanApp = require('../index');
+const cleanApp = require('../src');
 const mockApplication = require('../mock_application.json');
 const filterMockApplication = require('./fixtures/filter_mock_application.json');
 
