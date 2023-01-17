@@ -1,0 +1,206 @@
+[
+  {
+    "inflections": {
+      "singular": "Employee",
+      "plural": "Employees"
+    },
+    "connections": {
+      "inbound": [],
+      "outbound": []
+    },
+    "name": "Employees",
+    "user": true,
+    "status": "current",
+    "tasks": [],
+    "type": "UserObject",
+    "fields": [
+      {
+        "type": "name",
+        "required": true,
+        "unique": false,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefa",
+        "name": "Name",
+        "format": {
+          "format": "First Last"
+        },
+        "immutable": true,
+        "key": "field_17"
+      },
+      {
+        "type": "email",
+        "required": true,
+        "unique": true,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefb",
+        "name": "Email",
+        "format": {
+          "text_format": "url",
+          "label": ""
+        },
+        "immutable": true,
+        "key": "field_18"
+      },
+      {
+        "type": "password",
+        "required": true,
+        "unique": true,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefc",
+        "name": "Password",
+        "format": null,
+        "immutable": true,
+        "key": "field_19"
+      },
+      {
+        "type": "multiple_choice",
+        "required": true,
+        "unique": false,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefd",
+        "name": "User Status",
+        "format": {
+          "options": [
+            "active",
+            "inactive",
+            "pending approval"
+          ],
+          "default": "active"
+        },
+        "immutable": true,
+        "key": "field_20"
+      },
+      {
+        "type": "user_roles",
+        "required": false,
+        "unique": false,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefe",
+        "name": "User Roles",
+        "immutable": true,
+        "key": "field_21"
+      }
+    ],
+    "template": "",
+    "key": "object_4",
+    "profile_key": "profile_4",
+    "identifier": "field_17"
+  },
+  {
+    "inflections": {
+      "singular": "Employee",
+      "plural": "Employees"
+    },
+    "connections": {
+      "inbound": [],
+      "outbound": []
+    },
+    "name": "Employees",
+    "user": true,
+    "status": "current",
+    "tasks": [],
+    "type": "UserObject",
+    "fields": [
+      {
+        "type": "name",
+        "required": true,
+        "unique": false,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefa",
+        "name": "Name",
+        "format": {
+          "format": "First Last"
+        },
+        "immutable": true,
+        "key": "field_17"
+      },
+      {
+        "type": "email",
+        "required": true,
+        "unique": true,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefb",
+        "name": "Email",
+        "format": {
+          "text_format": "url",
+          "label": ""
+        },
+        "immutable": true,
+        "key": "field_18"
+      },
+      {
+        "type": "password",
+        "required": true,
+        "unique": true,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefc",
+        "name": "Password",
+        "format": null,
+        "immutable": true,
+        "key": "field_19"
+      },
+      {
+        "type": "multiple_choice",
+        "required": true,
+        "unique": false,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefd",
+        "name": "User Status",
+        "format": {
+          "options": [
+            "active",
+            "inactive",
+            "pending approval"
+          ],
+          "default": "active"
+        },
+        "immutable": true,
+        "key": "field_20"
+      },
+      {
+        "type": "user_roles",
+        "required": false,
+        "unique": false,
+        "user": true,
+        "conditional": false,
+        "rules": [],
+        "validation": [],
+        "_id": "61e86a181137bc002545fefe",
+        "name": "User Roles",
+        "immutable": true,
+        "key": "field_21"
+      }
+    ],
+    "template": "",
+    "key": "object_4",
+    "profile_key": "profile_4",
+    "identifier": "field_17"
+  }
+]
