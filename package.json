@@ -4,7 +4,8 @@
   "description": "find duplicates in a mock example",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "exclude:duplicates": "node runner.js"
   },
   "keywords": [
     "duplicates",

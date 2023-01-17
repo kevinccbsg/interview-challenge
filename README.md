@@ -1,3 +1,13 @@
+## Knack exercise
+
+This project uses NodeJS, Jest for the testing and AJV to validate the json schema of the exercise.
+
+To run this project it is necesarry execute the next steps:
+
+1. Install dependencies. `npm install`.
+2. Execute `npm run exclude:duplicates` or `node runner`.
+3. You can also run `npm t` to execute the tests.
+
 ## Remove Duplicates From Mock Knack Application Schema
 
 Knack is a no-code platform that includes an online database. Knack users will at times, through unexpected API usage or an unknown bug, corrupt their application schemas. One common issue they may run into is having duplicate fields and/or objects in their application schema. These duplicates cannot be removed by the Knack UI and lead to TypeErrors and other problems.
