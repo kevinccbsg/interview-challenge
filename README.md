@@ -1,3 +1,5 @@
+[![CI](https://github.com/kevinccbsg/interview-challenge/actions/workflows/ci.yml/badge.svg)](https://github.com/kevinccbsg/interview-challenge/actions/workflows/ci.yml)
+
 ## Knack exercise
 
 This project uses NodeJS, Jest for the testing and AJV to validate the json schema of the exercise.
@@ -7,6 +9,44 @@ To run this project it is necesarry execute the next steps:
 1. Install dependencies. `npm install`.
 2. Execute `npm run exclude:duplicates` or `node runner`.
 3. You can also run `npm t` to execute the tests.
+
+This is the folder structure:
+
+```
+├───.github
+│   └───workflows
+├───schema
+├───src
+├───tests
+│   └───fixtures
+└───utils
+│index.js
+│runner.js
+```
+
+### .github
+
+Includes CI file with Github actions.
+
+### schema
+
+This includes the `mock_application` json schema to validate with [AJV](https://ajv.js.org/). This validation will avoid processing wrong files with non valid schemas.
+
+### src
+
+This folder contains the main logic of the clean mock application example.
+
+### utils
+
+This folder will have a few javascript utils to handle data. In this case, the removeJSONDuplicates.
+
+### index.js
+
+File which contain the funtion to clean the file and also create a new one. This file 
+
+### runner.js
+
+File to execute the main function and generate the `clean_application.json` file.
 
 ## Remove Duplicates From Mock Knack Application Schema
 
